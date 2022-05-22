@@ -1,0 +1,32 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+body {
+    font-size: 100%;
+    background-image: linear-gradient(to bottom,#016A8F,#3D4345);
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:white;
+    flex-direction: row;
+ 
+
+    
+}
+img{
+    margin: 50px;
+    align-items:flex-end;
+}
+section {
+    border: 0;
+	border-top: 1px solid #B49089;
+    align-content: space-between;
+    padding: auto;
+
+}

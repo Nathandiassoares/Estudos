@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagens dinâmica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou aumentar e diminuir a tela do seu navegardor</p>
+    <picture>
+        <source media="(max-width:700px)" srcset="imagens/foto-p.png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png">
+        <img src="imagens/foto-g.png" alt="imagens flexivel">
+    </picture>
+
+    <h2>Reproduzindo Áudio</h2>
+    <p>Vamos aprender a reproduzir audio em site</p>
+    <audio preload="metadata" src="midia/Kazoom - Quincas Moreira.mp3"autoplay controls >  </audio>
+</body>
+</html>

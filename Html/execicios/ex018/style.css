@@ -1,0 +1,35 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;700&display=swap');
+body{
+    background-image:linear-gradient(to right,#3D9C82,#96FFE3) ;
+    font-family:'Oswald','sans-serif';
+}
+main{
+    box-shadow: 10px 10px 15px #2d705e93;
+    background-color: white;
+    width: 600px;
+    padding: 10px;
+    margin: auto; 
+}
+.tituloprincipal{
+    font-weight: 500;
+    text-shadow:1px 1px 2px #5f23118f ;
+    color: #9E3B1C;
+    font-size: 60px;
+    text-align: center;
+}
+.titulosecundario{
+    font-size: 40px;
+    color: #E88D72;
+    font-weight: 700;
+}
+h2{
+   color: #E88D72;
+   font-size: 30px;
+   font-weight: 500;
+}
+p{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: justify;
+}

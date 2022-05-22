@@ -1,0 +1,34 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    align-items: center;
+    background-color: rgb(59, 59, 59);
+    color: white;
+    justify-content: space-between;
+    padding: 20px;
+}
+li{
+    display:inline-block;
+
+}
+li a {
+    text-decoration: none;
+    color: white;
+    margin: 0% 10px;
+}
+main {
+    background-color: rgb(99, 99, 99);
+    color: white;
+    align-items:stretch;
+}
+header {
+    background-color:rgb(48, 48, 48); ;
+}
+body {
+    background-color: rgb(99, 99, 99);
+}
