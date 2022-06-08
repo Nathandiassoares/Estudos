@@ -5,11 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criando Tabela</title>
+    <style> 
+    table{
+        width: 400px;
+        border-collapse: collapse;
+        
+    }
+
+    tr.linha {
+        background-color: lightgray;
+
+    }
+
+    td {
+        border: 1px solid black ;
+        padding: 8px;
+        
+    }
+
+    td.dado {
+        background-color: red;
+    }
+    </style>
 </head>
 <body>
+    <h1>Criando tabelas</h1>
     <table>
-        <tr>
-            <td>a1</td>
+        <tr class="linha">
+            <td class="dado">a1</td>
             <td>a2</td>
             <td>a3</td>
         </tr>
