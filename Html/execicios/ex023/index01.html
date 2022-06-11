@@ -13,6 +13,12 @@
             width: 500px;
             border-collapse: collapse;
         }
+        caption {
+            background-color: lightgray;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
         thead,tfoot {
             background-color: gray;
             color: white;
@@ -31,10 +37,11 @@
 <body>
     <h1>Criando tabela grande</h1>
     <table>
+        <caption>Unidade Federal</caption>
         <thead>
             <tr>
-                <th>Unidade federal</th>
-                <th>População</th>
+                <th scope="col">Estados</th>
+                <th scope="col" style="width:80px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -151,7 +158,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total da população</th>
+                <th scope="row">Total da população</th>
                 <td class="num"><strong>19 597 330</strong></td>
             </tr>
 
