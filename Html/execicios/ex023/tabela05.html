@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupando Colunas com colgroup</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption {
+            background-color: rgb(29, 29, 29);
+            color: white;
+            font-size: 1.2em;
+            padding: 5px;
+            font-weight: bolder;
+        }
+        table {
+            width: 300px;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid gray;
+            padding: 10px;
+            text-align: center;
+        }
+        .nome {
+            background-color: rgb(92, 92, 92);
+        }
+    
+        .genero {
+            background-color: rgb(78, 75, 226);
+        }
+    
+        .idade {
+            background-color: rgb(85, 214, 73);
+        }
+    
+        .bairro {
+            background-color: rgb(192, 80, 16);
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Pessoas cadastradas</caption>
+        <colgroup>
+            <col class="nome">
+            <col class="genero">
+            <col class="idade">
+            <col class="bairro">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Genero</th>
+                <th scope="col">idade</th>
+                <th scope="col">Bairro</th>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>Homen</td>
+                <td>18</td>
+                <td>edgar</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>Homen</td>
+                <td>18</td>
+                <td>edgar</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>Homen</td>
+                <td>18</td>
+                <td>edgar</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>Homen</td>
+                <td>18</td>
+                <td>edgar</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>Homen</td>
+                <td>18</td>
+                <td>edgar</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>Homen</td>
+                <td>18</td>
+                <td>edgar</td>
+            </tr>
+        </thead>
+    </table>
+</body>
+</html>
