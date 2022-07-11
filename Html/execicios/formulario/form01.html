@@ -13,9 +13,11 @@
 </head>
 <body>
     <h1>Criando primeiro formulario</h1>
-    <form action="">
-        <p>Nome: <input type="text" name="nome" id="nome"></p>
-        <p>Sobremone: <input type="text" name="sobremone" id="sobremone"></p>
+    <form action="cadastro.php" autocomplete="off">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobremone">Sobremone: </label>
+            <input type="text" name="sobremone" id="isobremone"></p>
         <p><input type="submit" value="Enviar"></p>
     </form>
 </body>

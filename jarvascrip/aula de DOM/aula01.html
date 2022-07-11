@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passsos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(96, 160, 243);
+            color: white;
+            font-size:1.2em;
+        }
+    </style>
+</head>
+<body>
+    <section id="teste">
+        <h1 id="titulo">Iniciando estudos com DOM</h1>
+        <h2>DOM = <strong>DOCUMENT OBJECT MODEL</strong></h2>
+        <p>Vamos começar a utilizar o DOM</p>
+        <p>Mudando o texto por JavaScrip</p>
+    </section>
+    
+    
+    <script>
+        /* conseguimos mudar o texto e a cor....
+        var texto = document.getElementsByTagName('p')[1]
+        texto.innerHTML=('TESTE')
+        texto.style.backgroundColor = 'white'
+        texto.style.color = 'black'
+        */
+       /* 
+       var titulo = document.getElementById('titulo')
+       titulo.innerText=('Alterando o titlo principal')
+       */
+        var estilo = document.getElementById('teste')
+        estilo.style.backgroundColor = 'green'
+        
+    </script>
+</body>
+</html>
