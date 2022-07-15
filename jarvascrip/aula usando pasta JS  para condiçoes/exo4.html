@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando condição para paises</title>
+</head>
+<body>
+    <h1>Você é estrangeiro o brasileiro?</h1>
+    Onde você mora <input type="text" name="local" id="local"> <input type="button" value="Avaliar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function verificar() {
+            var loc = document.getElementById('local')
+            var lc = String (loc.value)
+            var rs = document.getElementById('res')
+            rs.innerHTML = `<p>Você mora no: <strong>${lc}</strong> <br></p>`
+            if(lc == 'brasil') {
+                rs.innerHTML += `Como você mora no <strong>${lc}</strong> então e Brasileiro...`
+            } else {
+                rs.innerHTML += `Como você mora no <strong>${lc}</strong> então é estrangeiro!!`
+            }
+        }
+    </script>
+</body>
+</html>
