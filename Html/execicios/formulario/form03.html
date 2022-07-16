@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de notas</title>
+</head>
+<body>
+    <h1>Nota do Primeiro bimestre do ano de 2022</h1>
+    <form action="cadastro.php" method="get">
+        <h2>Média "6,5"</h2>
+
+            <p><label for="inam">Nome completo</label>
+                <input type="text" name="nam" id="inam" required placeholder="Nome completo" maxlength="25" minlength="8">
+            </p>
+           
+            <p><label for="inot">Nota</label>
+                <input type="number" name="not" id="inot" step="0.5" value="6.5" required min="0" max="10">
+            </p>
+        
+            <p><label for="idat">Data</label>
+                <input type="date" name="dat" id="idat" required>
+            </p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
