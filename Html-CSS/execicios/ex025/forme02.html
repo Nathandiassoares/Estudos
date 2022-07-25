@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario Colocando seletor de cores nivel é arquivo/imagen</h1>
+    <!--OBS:Quando usar o INPUT do TYPE:FILE sempre use o METHOD como "POST" para o arquivo ser enviado de forma correta-->
+    <form action="cadastro.php" method="post">
+      <p><label for="icor">Cor</label>
+        <input type="color" name="cor" id="icor" value="#4f1111">
+    </p>
+    <p><label for="iniv">Nivel</label>
+        <input type="range" name="niv" id="iniv" value="3" min="1" max="10" >
+    </p>
+    <p>Foto do perfil
+        <input type="file" name="foto" id="ifoto">
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+    </p>
+    </form>
+</body>
+</html>
