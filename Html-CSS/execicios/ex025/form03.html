@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Fomulario com "seletor"</h1>
+    <form action="cadatro.php" method="post">
+       
+        <div>Escolha seu campeao
+            
+            <select name="Campeoes" id="icampeoes">
+                
+                <option value="" selected>--Escolha--</option>
+                
+                <optgroup label="Atirador">
+                    <option value="Atirador">Vayne</option>
+                    <option value="Atirador">Sirvir</option>
+                    <option value="Atirador">Ashe</option>
+                </optgroup>
+
+                <optgroup label="Lutador">
+                    <option value="Lutador">Lee</option>
+                    <option value="Lutador">Riven</option>
+                    <option value="LUtador">Jax</option>
+                </optgroup>
+
+            </select>
+            
+        </div>
+
+        <div>
+            <label for="irota">Escolha sua rota</label>
+            <input type="text" name="lane" id="irota" list="listrota">
+            <datalist id="listrota">
+                <option>BOT</option>
+                <option>TOP</option>
+            </datalist>
+        </div><br>
+
+        <div><br>
+            <label for="idesc">Descrevar suas habilidades</label><br>
+            <textarea name="desc" id="idesc" cols="30" rows="10"></textarea>
+        </div><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+
+    </form>
+
+</body>
+</html>
