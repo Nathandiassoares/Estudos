@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo</title>
+</head>
+<body>
+    <h1>Calculando...</h1>
+    <form action="cadastro.phn" method="get">
+        <p><label for="inu1">Numero1</label>
+            <input type="number" name="nu1" id="inu1" min="0" max="10" required 
+            
+            
+            oninput="isoma.innerHTML = Number(inu1.value) + Number(inu2.value)">  
+        </p>
+
+        <p><label for="inu2">Numero2</label>
+            <input type="number" name="nu2" id="inu2" min="0" max="10" required 
+            
+            
+            oninput="isoma.innerHTML = Number(inu1.value) + Number(inu2.value)">
+        </p>
+
+        <p><label for="isoma">Soma:</label>
+            <output name="soma" id="isoma">0</output>
+        </p>
+
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
