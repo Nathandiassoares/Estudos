@@ -20,8 +20,8 @@ body {
 
 main {
     background-color: rgba(255, 255, 255, 0.479);
-    width:80vw;
-    margin: auto;
+    max-width:600px;
+    margin:auto;
     border-radius: 10px;
     margin-top: 20px;
     
@@ -37,8 +37,8 @@ img {
     margin:auto;
 }
 
-img#phone {display: block;}
-img#tablet{display: none;}
-img#pc{display: none;}
-img#tv{display: none;}
-img#print{display: none;}
+img#phone   {display: block;}
+img#tablet  {display: none; }
+img#pc      {display: none; }
+img#tv      {display: none; }
+img#print   {display: none; }

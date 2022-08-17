@@ -1,1 +1,66 @@
 @charset "UFT-8";
+/* Todas as demais midias */
+
+/* Typical divive breakpoints 
+-----------------------------
+        Pequenas: telas: até 600px
+        celular: de 600px até 700px 
+        tablet: 700px até 992px
+        Desktop: 992px atè 1200px
+        Telas grandes: acima de 1200px
+*/
+
+@media print {
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    main {
+        width: 600px;
+        border: 2px solid black;
+    }
+    main, h1 {
+        text-shadow: none;
+        color: black;
+    }
+    main:after{
+        content: 'Testando midia query com gustavo guanabara';
+    }
+    img#phone   {display:none; }
+    img#tablet  {display:none; }
+    img#pc      {display:none; }
+    img#tv      {display:none; }
+    img#print   {display:block;}
+}
+
+@media screen and (min-width:700px) and (max-width:992px){ /* Desktop */
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#phone   {display:none; }
+    img#tablet  {display:block;}
+    img#pc      {display:none; }
+    img#tv      {display:none; }
+    img#print   {display:none; }
+}
+
+@media screen and (min-width:992px) and (max-width:1200px){ /* TVS */
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#phone   {display:none; }
+    img#tablet  {display:none; }
+    img#pc      {display:block;}
+    img#tv      {display:none; }
+    img#print   {display:none; }
+}
+
+@media screen and (min-width:1200px){ /* Telas Grandes */
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#phone   {display:none; }
+    img#tablet  {display:none; }
+    img#pc      {display:none; }
+    img#tv      {display:block;}
+    img#print   {display:none; }
+}
