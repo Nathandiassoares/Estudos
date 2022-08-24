@@ -6,3 +6,72 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
+body {
+    background-color: gray;
+}
+
+header {
+    background-color: rgb(56, 56, 56);
+}
+
+#burguer {
+    cursor: pointer;
+    text-align: center;
+    background-color: rgb(24, 24, 24);
+    display: block;
+    padding: 6px;
+    color: white;
+}
+#burguer:hover {
+    background-color: white;
+    color: black;
+
+}
+h1 {
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+#itens {
+    display: none;
+    background-color: rgb(71, 70, 70);
+}
+
+menu li {
+    list-style-type: none;
+    padding: 6px;
+    border: solid 2px gray; 
+    text-align: center;
+    transition: 0.5s;
+} 
+
+menu > ul > li > a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    
+}
+
+menu li:hover {
+    background-color: rgb(114, 114, 114);
+}
+/* Se colocamos margin-top antes do margin:auto a declaração não funciona */
+main {
+    background-color: white;
+    width: 86vw;
+    padding: 10px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    padding: 10px;
+    text-indent: 10px;
+}
